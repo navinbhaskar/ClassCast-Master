@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "633109830849",
+    "project_id": "classcast-198812"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633109830849:android:ab7536c6a781265a",
+        "android_client_info": {
+          "package_name": "com.classcast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633109830849-k66rt069jjbebcmpcvlmomouioi16c85.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.classcast",
+            "certificate_hash": "fdcfe5d9184c35291c03b452a51c3a8bfacc784f"
+          }
+        },
+        {
+          "client_id": "633109830849-vubobnojcp8gi6hmc6f7tja28j6tctk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw1TYmD5lBEU-pZcwEl2r7WCARq1xHtSQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

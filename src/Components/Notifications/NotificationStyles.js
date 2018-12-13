@@ -1,0 +1,242 @@
+import {Dimensions, StyleSheet} from 'react-native';
+
+const screen = Dimensions.get('window');
+const vh = screen.height / 100;
+const vw = screen.width / 100;
+
+const styles = StyleSheet.create({
+  container: {
+    position: 'absolute',
+    height: 100 * vh,
+    width: 100 * vw,
+  },
+  notificationPanel: {
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    height: 100 * vh,
+    width: 85 * vw,
+    backgroundColor: 'white',
+    // elevation: 5,
+  },
+  notificationPanelTitle: {
+    height: 15 * vh,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    width: '100%',
+  },
+  notificationPanelTitleText: {
+    fontSize: 6.66 * vw,
+    color: 'black',
+    flex: 1,
+    paddingLeft: 12.5 * vw,
+  },
+  notificationPanelCloseIcon: {
+    height: 9 * vw,
+    width: 9 * vw,
+    marginRight: 10 * vw,
+    marginTop: vh,
+  },
+  bgOverlay: {
+    position: 'absolute',
+    height: 100 * vh,
+    width: 100 * vw,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  notificationItem: {
+    // height: 12.5*vh,
+    width: '100%',
+    paddingLeft: 5 * vw,
+    paddingRight: 7.5 * vw,
+    marginBottom: 3.5 * vh,
+    flexDirection: 'row',
+  },
+  notificationUserIcon: {
+    width: 15 * vw,
+    height: 15 * vw,
+    marginRight: 2.5 * vw,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  notificationInfoContainer: {
+    flex: 1,
+    height: '90%',
+  },
+  notificationInfo: {
+    fontSize: 4 * vw,
+    marginBottom: vh,
+  },
+  notificationTime: {
+    fontSize: 3 * vw,
+    color: '#555',
+  },
+  notificationDisplayPic: {
+    height: 15 * vw,
+    width: 15 * vw,
+    borderRadius: 7.5 * vw,
+  },
+  backgroundImage: {
+    height: '100%',
+    width: '100%',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  },
+  topLeftPlayer: {
+    position: 'absolute',
+    top: 2.5 * vh,
+    left: 2.5 * vw,
+    height: '40%',
+    width: '50%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  bottomRightPlayer: {
+    position: 'absolute',
+    bottom: 2.5 * vh,
+    right: 2.5 * vw,
+    height: '40%',
+    width: '50%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  profilePicture: {
+    height: 20 * vw,
+    width: 20 * vw,
+    borderRadius: 10 * vw,
+ 
+  },
+  playerContainer: {
+    width: 50 * vw,
+    height: 30 * vh,
+    position: 'absolute',
+    top: 10 * vh,
+    flexDirection: 'row',
+    elevation: 5,
+  },
+  playerStats: {
+    flex: 1,
+    height: '100%',
+    alignItems: 'center',
+    marginBottom: 4 * vh,
+  },
+  statsFieldContainer: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    marginBottom: 2 * vh,
+  },
+  userName: {
+    color: 'black',
+    fontSize: 4 * vw,
+    marginTop: 1 * vh,
+    textAlign: 'center',
+  },
+  focusText: {
+    fontSize: 6 * vw,
+    color: 'black',
+  },
+  notFocusText: {
+    fontSize: 4 * vw,
+    color: 'black',
+    marginBottom: vw,
+    marginLeft: 0.5 * vw,
+  },
+  cross: {
+    marginTop: 4 * vh,
+    height: 7 * vw,
+    width: 7 * vw,
+    borderRadius: 10 * vw,
+  },
+  challengeModal: {
+    height: 80 * vh,
+    width: 90 * vw,
+    borderRadius: 1.5 * vw,
+    paddingTop: 4 * vh,
+    paddingLeft: 7.5 * vw,
+    paddingRight: 7.5 * vw,
+    paddingBottom: 4 * vh,
+    alignItems: 'center',
+    marginTop: 10 * vh,
+  },
+  challengeTopSection: {
+    height: 45 * vh,
+    width: 80 * vw,
+    borderRadius: 2 * vw,
+    backgroundColor: 'white',
+    elevation: 2,
+    alignItems: 'center',
+  },
+  challengedIcon: {
+    flex: 1,
+    width: '75%',
+    height: '60%',
+    marginTop: 2 * vh,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+ 
+  challengeTopSectionText: {
+    flex: 1,
+    fontSize: 5 * vw,
+    marginTop: 2 * vh,
+    marginRight: 2 * vh,
+    marginLeft: 2 * vh,
+    marginBottom: 2 * vh,
+    fontFamily: 'Montserrat-SemiBold',
+    paddingLeft: 3 * vw,
+    paddingRight: 3 * vw,
+    color: 'black',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  challengeBottomSection: {
+    backgroundColor: 'white',
+    width: 70 * vw,
+    borderBottomRightRadius: 2 * vw,
+    borderBottomLeftRadius: 2 * vw,
+    flex: 1, 
+    flexDirection: 'row',
+  },
+  resultCloseButton: {
+    width: 50 * vw,
+    marginTop: 5 * vh,
+    borderBottomRightRadius: 5 * vw,
+    borderBottomLeftRadius: 5 * vw,
+    borderTopRightRadius: 5 * vw,
+    borderTopLeftRadius: 5 * vw,
+    flex: 1, 
+    flexDirection: 'row',
+  },
+  challengeAcceptText: {
+    paddingLeft: 10 * vw,
+    paddingRight: 10 * vw,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  challengeButtonContainer: {
+    flexDirection: 'row',
+    overflow: 'hidden',
+  },
+  challengeModalButton: {
+    flex: 1,
+    height: 7 * vh,
+    backgroundColor: '#9154d0',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderBottomRightRadius: 5 * vw,
+    borderBottomLeftRadius: 5 * vw,
+    borderTopRightRadius: 5 * vw,
+    borderTopLeftRadius: 5 * vw,
+  },
+  challengeModalButtonText: {
+    fontSize: 5 * vw,
+    fontFamily: 'Montserrat-Bold',
+    color: 'white',
+
+  },
+
+});
+
+export default styles;
